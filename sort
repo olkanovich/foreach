@@ -1,0 +1,16 @@
+using System;
+
+public class StringSorter {
+    public static void SortStrings(string[] strings) {
+        Array.Sort(strings);
+    }
+
+    public static void Main(string[] args) {
+        string[] words = { "cat", "apple", "zebra", "banana" };
+        SortStrings(words);
+        Console.WriteLine("Sorted strings:");
+        foreach (string word in words) {
+            Console.WriteLine(word);
+        }
+    }
+}
